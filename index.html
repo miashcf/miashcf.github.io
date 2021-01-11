@@ -1,10 +1,1 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<!DOCTYPE html><html><head><title>下载页</title><meta charset="GBK"/><script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script></head><p>点击下载：<br></p><div id="a"><script>function GetRequest(){var url=location.search;if(url.indexOf("?")!=-1){var str=url.substr(1);strs=str.split("=");return strs[1];}}var k=GetRequest();$(function(){$.get(k+"json.txt",function(d,s){var p=JSON.parse(d);for(j=0;j<p.length;j++){$("#a").append("<a href='"+ p[j].u+"'>"+p[j].n+"</a><br>");}});})</script></div><a href="?=112">dd</a></body></html>
